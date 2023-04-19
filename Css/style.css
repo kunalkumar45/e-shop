@@ -33,6 +33,7 @@ body {
     left: 0;
     top: 0;
     background: radial-gradient(#fff, #ffd6d6);
+    z-index: 999;
 }
 
 nav {
