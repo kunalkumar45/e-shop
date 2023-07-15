@@ -291,54 +291,21 @@ color: #8a8a8a;
     color: #fff;
     text-decoration: underline;
 }
-/* -------responsive---------- */
+/* navigation burger */
 #burger {
     position: absolute;
-    top: 25px;
+    top: 0;
     right: 15px;
- }
- 
- #burger i {
-     visibility: hidden;
-     margin-right: 20px;
-     font-size: 30px;
-     cursor: pointer;
- }
- 
- #burger i:hover {
-     color: black;
- }
- @media screen and (max-width:768px) {
-    .navbar ul {
-        position: fixed;
-        left: -100%;
-        justify-content: center;
-        margin-top: 38px;
-        width: 100%;
-        background:#ffbfb7;
-        flex-direction: column;
-        text-align: center;
-        opacity: 1;
-        margin-left: 0;
-        transition: all 0.5s;
-    }
-    .navbar ul li{
-       padding: 10px 0;
-    }
-    #burger i {
-        line-height: 60px;
-        visibility: visible;
-    }
-    .checke:checked ~ ul{
-        left: 0;
-       
-    }
 }
-@media screen and (max-width:576px){
-.row{
-    text-align: center;
+
+#burger i {
+    display: none;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    cursor: pointer;
 }
-.col-2, .col-3, .col-4{
-    flex-basis: 100%;
-}
+
+#burger i:hover {
+    color: black;
 }

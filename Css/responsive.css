@@ -1,0 +1,48 @@
+/* -------responsive---------- */
+ @media screen and (max-width:768px) {
+    * {
+        cursor: default;
+    }
+    .navbar ul {
+        position: fixed;
+        left: -100%;
+        justify-content: center;
+        margin-top: 50px;
+        width: 100%;
+        background:#ffbfb7;
+        flex-direction: column;
+        text-align: center;
+        opacity: 1;
+        margin-left: 0;
+        transition: all 0.5s;
+    }
+    #burger i{
+        display: block;
+        cursor: default;
+    }
+    
+
+    .navbar ul.active {
+        position: fixed;
+        left: 0;
+    }
+    .navbar ul li{
+       padding: 10px 0;
+    }
+    #burger i {
+        line-height: 60px;
+        visibility: visible;
+    }
+    .checke:checked ~ ul{
+        left: 0;
+       
+    }
+}
+@media screen and (max-width:576px){
+.row{
+    text-align: center;
+}
+.col-2, .col-3, .col-4{
+    flex-basis: 100%;
+}
+}
